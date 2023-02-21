@@ -1,0 +1,69 @@
+/**
+ *	Styling the Header of the site
+ */
+#masthead {
+	font-size: 1rem;
+	.header-overlay {
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: black;
+		opacity: 0.3;
+	}
+	.custom-logo-link img {
+		padding: 2em 0;
+	}
+}
+.nav-wrapper {
+	position: relative;
+	background-color: $primary;
+	padding: 0.5em 0;
+	@media (min-width: 992px) {
+		padding: 0;
+	}
+	& > * {
+		position: relative;
+	}
+	button {
+		background: none;
+		border: 0;
+		font-size: 1.5em;
+		color: white;
+	}
+}
+
+#header-image {
+	position: relative;
+	min-height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.site-branding {
+	position: relative;
+	z-index: 1;
+	@media (max-width: 767px) {
+		margin-bottom: 0.5em;
+		text-align: center;
+	}
+	.site-title {
+		margin: 0;
+	}
+	.site-description {
+		margin-bottom: 0;
+	}
+}
+
+//Style 2
+#logo-ad-area {
+	display: flex;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	section {
+		margin-bottom: 0;
+	}
+}

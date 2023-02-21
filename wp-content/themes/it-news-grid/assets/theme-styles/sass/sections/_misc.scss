@@ -1,0 +1,41 @@
+// Miscellaneous Styling for different parts of the theme
+
+//Lightbox
+.mfp-counter {
+	@extend %heading-font;
+}
+
+.edit-post-link {
+	@extend %tertiary-btn;
+}
+
+#itng-back-to-top {
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+	bottom: 10vh;
+	right: 10vh;
+	color: #fff;
+	height: 50px;
+	width: 50px;
+	background-color: $primary;
+	display: none;
+	i {
+		padding-bottom: 5px;
+	}
+	&.show {
+		display: flex;
+		animation: backToTop 300ms forwards;
+	}
+}
+
+@keyframes backToTop {
+	0% {
+		opacity: 0;
+		@include transform( translateY(20px) );
+	}
+	100% {
+		opacity: 1;
+		@include transform( translateY(0px) );
+	}
+}
